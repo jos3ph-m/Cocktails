@@ -5,7 +5,11 @@ import logo from '../logo.svg';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h2>navbar component</h2>
+      <div className="nav-center">
+        <Link to="/">
+          <img src={logo} alt="the cocktail db" className="logo"></img>
+        </Link>
+      </div>
     </nav>
   );
 };
