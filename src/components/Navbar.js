@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../logo.svg'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../logo.svg';
 
 const Navbar = () => {
   return (
-    <div>
+    <nav className="navbar">
       <h2>navbar component</h2>
-    </div>
-  )
-}
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
