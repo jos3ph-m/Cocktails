@@ -11,6 +11,9 @@ const About = () => {
         soluta esse, fugiat eligendi numquam totam quae amet eos, consectetur
         tenetur deleniti.
       </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, neque!
+      </p>
     </section>
   );
 };
