@@ -12,6 +12,7 @@ const AppProvider = ({ children }) => {
   const fetchDrinks = async () => {
     setLoading(true);
     try {
+      const response = await fetch(`${url}searchTerm`);
     } catch (error) {
       console.log(error);
     }
