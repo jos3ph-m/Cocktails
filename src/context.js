@@ -8,10 +8,16 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('a');
   const [cocktails, setCocktails] = useState([]);
+
+  const fetchDrinks = async () => {
+    try {
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <AppContext.Provider
-      value={{ loading, searchTerm, cocktails, setSearchTerm }}
-    >
+    <AppContext.Provider value={{ loading, cocktails, setSearchTerm }}>
       {children}
     </AppContext.Provider>
   );
