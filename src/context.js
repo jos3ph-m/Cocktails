@@ -10,6 +10,7 @@ const AppProvider = ({ children }) => {
   const [cocktails, setCocktails] = useState([]);
 
   const fetchDrinks = async () => {
+    setLoading(true);
     try {
     } catch (error) {
       console.log(error);
