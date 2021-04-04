@@ -8,7 +8,11 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('a');
   const [cocktails, setCocktails] = useState([]);
-  return <AppContext.Provider value="hello">{children}</AppContext.Provider>;
+  return (
+    <AppContext.Provider value={{ loading, searchTerm, cocktails }}>
+      {children}
+    </AppContext.Provider>
+  );
 };
 // make sure use
 export const useGlobalContext = () => {
