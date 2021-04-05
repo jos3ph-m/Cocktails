@@ -24,7 +24,16 @@ const AppProvider = ({ children }) => {
             strAlcoholic,
             strGlass,
           } = item;
+          //renaming properties
+          return {
+            id: idDrink,
+            name: strDrink,
+            image: strDrinkThumb,
+            info: strAlcoholic,
+            glass: strGlass,
+          };
         });
+        setCocktails(newCocktails);
       } else {
         setCocktails([]);
       }
