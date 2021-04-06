@@ -14,6 +14,11 @@ const SearchForm = () => {
     setSearchTerm(searchValue.current.value);
   };
 
+  // prevent default action on enter
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="section search">
       <form className="search-form" onSubmit={handleSubmit}>
