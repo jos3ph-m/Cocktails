@@ -6,7 +6,11 @@ const SearchForm = () => {
   const searchValue = React.useRef('');
   return (
     <section className="section search">
-      <h2>search form component</h2>
+      <form className="search-form">
+        <div className="form-control">
+          <label htmlFor="name">search your favorite cocktail</label>
+        </div>
+      </form>
     </section>
   );
 };
