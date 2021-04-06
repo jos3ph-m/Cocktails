@@ -5,6 +5,7 @@ const SearchForm = () => {
   const { setSearchTerm } = useGlobalContext();
   const searchValue = React.useRef('');
 
+  // add focus to search on app render
   React.useEffect(() => {
     searchValue.current.focus();
   }, []);
