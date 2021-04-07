@@ -12,7 +12,11 @@ const SingleCocktail = () => {
     setLoading(true);
     async function getCocktail() {
       try {
-      } catch (error) {}
+        const response = await fetch(`${url}${id}`);
+        const data = await response.json();
+      } catch (error) {
+        console.log(error);
+      }
     }
   }, [id]);
   return (
