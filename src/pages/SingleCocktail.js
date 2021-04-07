@@ -10,6 +10,10 @@ const SingleCocktail = () => {
 
   React.useEffect(() => {
     setLoading(true);
+    async function getCocktail() {
+      try {
+      } catch (error) {}
+    }
   }, [id]);
   return (
     <div>
