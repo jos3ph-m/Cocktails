@@ -14,8 +14,14 @@ const SingleCocktail = () => {
       try {
         const response = await fetch(`${url}${id}`);
         const data = await response.json();
+        if (data.drinks) {
+        } else {
+          setCocktail(null);
+        }
+        setLoading(false);
       } catch (error) {
         console.log(error);
+        setLoading(false);
       }
     }
     getCocktail();
