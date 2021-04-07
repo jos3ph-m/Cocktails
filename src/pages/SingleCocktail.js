@@ -8,7 +8,7 @@ const SingleCocktail = () => {
 
   return (
     <div>
-      <h2>single cocktail page </h2>
+      <h2>{id}</h2>
     </div>
   );
 };
