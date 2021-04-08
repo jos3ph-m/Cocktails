@@ -60,7 +60,7 @@ const SingleCocktail = () => {
     return <Loading />;
   }
   if (!cocktail) {
-    return <h2>no cocktail to display</h2>;
+    return <h2 className="section-title">no cocktail to display</h2>;
   }
   return (
     <div>
