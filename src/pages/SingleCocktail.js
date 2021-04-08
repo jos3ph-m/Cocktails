@@ -59,6 +59,9 @@ const SingleCocktail = () => {
   if (loading) {
     return <Loading />;
   }
+  if (!cocktail) {
+    return <h2>no cocktail to display</h2>;
+  }
   return (
     <div>
       <h2>{id}</h2>
