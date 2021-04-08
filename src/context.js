@@ -46,7 +46,7 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     fetchDrinks();
-  }, [searchTerm]);
+  }, [searchTerm, fetchDrinks]);
 
   return (
     <AppContext.Provider value={{ loading, cocktails, setSearchTerm }}>
